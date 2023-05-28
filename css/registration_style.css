@@ -1,0 +1,74 @@
+form {
+    padding-top: 30px;
+    height: 65vh;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    box-shadow: 0px 0px 8px 1px white;
+    position: relative;
+}
+
+.s-wrap-field {
+    margin-top: 20px;
+    display: flex;
+    padding: 5px;
+}
+
+.s-wrap-field > div{
+    width: 100%;
+}
+
+.s-wrap-field div input {
+    width: 90%;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: var(--header--color);
+    transition: all 0.6s ease;
+}
+
+.s-wrap-msg-err {
+    margin-left: 10px;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: crimson;
+    background-color: pink;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px lightpink;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    transition: 0.6 ease all;
+    
+}
+
+input{
+    background-color: lightgray;
+    transition: 0.6 all ease;
+
+}
+
+input:focus {
+    background-color: white;
+    border: 1px solid white;
+    color: var(--header--color);
+    font-weight: bold;
+}
+
+.btn-new-user {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    background-color: var(--header--color);
+    bottom: 0;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+}

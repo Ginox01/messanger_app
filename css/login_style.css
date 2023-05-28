@@ -1,0 +1,99 @@
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--header--color);
+    font-weight: bold;
+}
+
+
+
+
+form {
+    height: 55vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    box-shadow: 0px 0px 8px 1px white;
+    position: relative;
+}
+
+
+.wrap-field {
+    margin-top: 60px;
+    width: 90%;
+    margin-left:  auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.wrap-client-error {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: crimson;
+    background-color: pink;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px lightpink;
+}
+
+.msg-off {
+    background-color: whitesmoke;
+    color: whitesmoke;
+    box-shadow: none;
+    user-select: none;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: var(--header--color);
+    background-color: lightgray;
+    transition: all 0.6s ease;
+}
+
+input::placeholder {
+    color: whitesmoke;
+}
+
+input:focus {
+    background-color: whitesmoke;
+    border: 1px solid white;
+    color: var(--header--color);
+    font-weight: bold;
+}
+
+.btn-login {
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-color: var(--header--color);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+
+@media screen and (min-width: 700px) {
+    
+    form {
+        width: 70%
+    }    
+    
+    .wrap-client-error {
+        padding-left: 50px;
+        padding-right: 50px;
+    }    
+  }
+
+
