@@ -32,7 +32,126 @@
                 <button type="button" class="btn" id="btn-change-img">Change img</button>            
                 <button type="button" class="btn" id="btn-logout">Logout</button>
             </div>
+            <span></span>
         </div>
+        <div class="s-wrap-list-users">
+            
+            <div class="s-utente">
+                <div class="s-utente-img">
+                    <img src="./src/no-img.jpg">
+                </div>
+                <div class="s-utente-info">
+                    <h4 style="padding:0;margin:0">Nome Utente</h4>
+                    <p class="s-small">last message</p>
+                </div>
+                <div class="s-utente-activity">
+                    <span class="activity offline"></span>
+                </div>
+                <span></span>
+            </div>
+
+            <div class="s-utente">
+                <div class="s-utente-img">
+                    <img src="./src/no-img.jpg">
+                </div>
+                <div class="s-utente-info">
+                    <h4 style="padding:0;margin:0">Nome Utente</h4>
+                    <p class="s-small">last message</p>
+                </div>
+                <div class="s-utente-activity">
+                    <span class="activity offline"></span>
+                </div>
+                <span></span>
+            </div>
+
+            <div class="s-utente">
+                <div class="s-utente-img">
+                    <img src="./src/no-img.jpg">
+                </div>
+                <div class="s-utente-info">
+                    <h4 style="padding:0;margin:0">Nome Utente</h4>
+                    <p class="s-small">last message</p>
+                </div>
+                <div class="s-utente-activity">
+                    <span class="activity offline"></span>
+                </div>
+                <span></span>
+            </div>
+
+            <div class="s-utente">
+                <div class="s-utente-img">
+                    <img src="./src/no-img.jpg">
+                </div>
+                <div class="s-utente-info">
+                    <h4 style="padding:0;margin:0">Nome Utente</h4>
+                    <p class="s-small">last message</p>
+                </div>
+                <div class="s-utente-activity">
+                    <span class="activity offline"></span>
+                </div>
+                <span></span>
+            </div>
+
+            <div class="s-utente">
+                <div class="s-utente-img">
+                    <img src="./src/no-img.jpg">
+                </div>
+                <div class="s-utente-info">
+                    <h4 style="padding:0;margin:0">Nome Utente</h4>
+                    <p class="s-small">last message</p>
+                </div>
+                <div class="s-utente-activity">
+                    <span class="activity offline"></span>
+                </div>
+                <span></span>
+            </div>
+
+            <div class="s-utente">
+                <div class="s-utente-img">
+                    <img src="./src/no-img.jpg">
+                </div>
+                <div class="s-utente-info">
+                    <h4 style="padding:0;margin:0">Nome Utente</h4>
+                    <p class="s-small">last message</p>
+                </div>
+                <div class="s-utente-activity">
+                    <span class="activity offline"></span>
+                </div>
+                <span></span>
+            </div>
+
+            <div class="s-utente">
+                <div class="s-utente-img">
+                    <img src="./src/no-img.jpg">
+                </div>
+                <div class="s-utente-info">
+                    <h4 style="padding:0;margin:0">Nome Utente</h4>
+                    <p class="s-small">last message</p>
+                </div>
+                <div class="s-utente-activity">
+                    <span class="activity offline"></span>
+                </div>
+                <span></span>
+            </div>
+
+            <div class="s-utente">
+                <div class="s-utente-img">
+                    <img src="./src/no-img.jpg">
+                </div>
+                <div class="s-utente-info">
+                    <h4 style="padding:0;margin:0">Nome Utente</h4>
+                    <p class="s-small">last message</p>
+                </div>
+                <div class="s-utente-activity">
+                    <span class="activity offline"></span>
+                </div>
+                <span></span>
+            </div>
+
+
+            <span class="end-list-users"></span>
+        </div>
+        
 
         <footer></footer>
     </section>

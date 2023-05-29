@@ -4,6 +4,7 @@
     height: 100px;
     align-items: center;
     margin-top: 5px;
+    position: relative;
 }
 
 .s-wrap-info-user div:nth-child(1) {
@@ -16,9 +17,10 @@
 }
 
 .s-wrap-info-user div:nth-child(1) img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
+   
 }
 
 .s-wrap-info-user div:nth-child(2){
@@ -41,6 +43,7 @@
     margin: 0;
     padding: 0;
     padding-bottom: 20px;
+    display: block;
 }
 
 .s-wrap-info-user div:nth-child(3) > div {
@@ -69,3 +72,140 @@
     border-radius: 5px;
 }
 
+.s-wrap-info-user span {
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    width: 99%;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.s-wrap-list-users{
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 55vh;
+    border-bottom: 2px white solid;
+    position: relative;
+}
+.s-utente {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+}
+
+.s-utente-img{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-utente-img img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.s-utente-info {
+    padding-left: 10px;
+    width: 55%;
+}
+
+.s-utente-activity {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-utente-activity .activity {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.6s ease;
+}
+
+.activity .online {
+    background-color: green;
+}
+
+.offline {
+    background-color: red;
+    color: red;
+}
+
+.s-small {
+    padding: 0;
+    font-size: 14px;
+    font-style: oblique;
+    color: rgb(63, 61, 61);
+}
+
+.s-utente > span {
+    position: absolute;
+    bottom: -5px;
+    width: 98%;
+    padding: 2px;
+    border-radius: 3px;
+    background-color: gray;
+} 
+
+.s-wrap-list-users > div:last-of-type > span {
+    display: none;
+}
+
+.end-list-users {
+    position: absolute;
+    width: 90%;
+    padding: 1px;
+    background-color: white;
+    box-shadow: 0 0 5px 5px snow;
+    padding-top: 5px;
+    margin-top: 10px;
+    bottom: 0;
+}
+
+@media screen and (min-width: 1000px)  {
+    .s-wrap-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #btn-change-img {
+        margin-right: 15px;
+        height: 50%;
+    }
+
+    #btn-logout {
+        height: 50%;
+    }
+
+    .s-utente-activity .activity {
+        height: 25px;
+        width: 25px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+ 
+    .s-wrap-info-user div:nth-child(1) img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .s-utente-img{
+        width: 20%;
+    }
+
+    
+    
+}
