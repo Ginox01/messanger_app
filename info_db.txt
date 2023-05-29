@@ -1,0 +1,8 @@
+NAME DATABASE = teresaah
+
+TABLE users => [
+    id INT(9) PRIMARY KEY AUTO_INCREMENTE,
+    mail VARCHAR(50) NOT NULL,
+    username VARCHAR(20) NOT NULL,
+    psw VARCHAR(255) NOT NULL
+]

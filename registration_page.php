@@ -30,21 +30,21 @@
          <form>
             <div class="s-wrap-field">
                 <div>
-                    <div class="s-wrap-msg-err msg-off"> ..</div>
+                    <div id="err-mail" class="s-wrap-msg-err msg-off"> ..</div>
                     <input type="text" placeholder="Insert your mail.." id="mail" class="">
                 </div>
                 <div>
-                    <div class="s-wrap-msg-err msg-off">..</div>
+                    <div id="err-username"  class="s-wrap-msg-err msg-off">..</div>
                     <input type="text" placeholder="Insert your username.." id="username" class="">
                 </div>
             </div>
             <div class="s-wrap-field">
                 <div>
-                    <div class="s-wrap-msg-err msg-off">..</div>
+                    <div id="err-psw" class="s-wrap-msg-err msg-off">..</div>
                     <input type="password" placeholder="Insert your password.." id="psw" class="">
                 </div>
                 <div>
-                    <div class="s-wrap-msg-err msg-off">..</div>
+                    <div id="err-confirm-psw" class="s-wrap-msg-err msg-off">..</div>
                     <input type="password" placeholder="Insert your password.." id="confirm-psw" class="">
                 </div>
             </div>
@@ -54,5 +54,6 @@
         <footer></footer>
     </section>
 
+    <script src="./scripts/reg.js"></script>
 </body>
 </html>

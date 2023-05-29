@@ -1,3 +1,10 @@
+<?php
+    if(!isset($_SESSION['logged'])){
+        header("location: login_page.php");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -149,8 +156,9 @@
             </div>
 
 
-            <span class="end-list-users"></span>
+            
         </div>
+        <span class="end-list-users"></span>
         
 
         <footer></footer>

@@ -91,6 +91,12 @@
     height: 55vh;
     border-bottom: 2px white solid;
     position: relative;
+    overflow-y: auto;
+}
+
+.s-wrap-list-users::-webkit-scrollbar {
+    width: 0;
+   
 }
 .s-utente {
     display: flex;
@@ -161,15 +167,17 @@
 }
 
 .end-list-users {
-    position: absolute;
+    display: block;
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1px;
     background-color: white;
     box-shadow: 0 0 5px 5px snow;
     padding-top: 5px;
-    margin-top: 10px;
-    bottom: 0;
 }
+
+
 
 @media screen and (min-width: 1000px)  {
     .s-wrap-btns {
