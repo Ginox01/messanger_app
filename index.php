@@ -164,6 +164,26 @@
         </div>
         <span class="end-list-users"></span>
         
+        <!--START FROM IMAGINE AREA -->
+
+        <section id="app-form-area">
+            <div class="img-form-container">
+                <div class="wrap-img-form-img">
+                    <img src="<?= $image == 'default' ? "./src/no-img.jpg":"./src/$image" ?>" >
+                    <h3>Your actually photo</h3>
+                </div>
+                <form action="./php/change_img.php" method="POST">
+                    <div class="wrap-upload">
+                        <label for="file">SCEGLI IMMAGINE</label>
+                        <input type="file" id="file" name="image" placeholder="Scegli immagine">
+                    </div>
+                    
+                    <button type="submit" class="btn">CAMBIA</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- END FORM IMAGE AREA -->
 
         <footer></footer>
     </section>

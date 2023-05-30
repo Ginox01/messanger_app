@@ -5,6 +5,9 @@
         $token = bin2hex($bytes);
         $_SESSION['crsf'] = $token;
     }
+
+    $token = $_SESSION['crsf'];
+
     
 ?>
 <!DOCTYPE html>
@@ -20,7 +23,7 @@
 </head>
 <body>
 
-    <input type="hidden" id="token" value="<?=$token?>">
+    <input type="hidden" id="token" value="<?= $token?>">
 
     <section class="app">
         <header>

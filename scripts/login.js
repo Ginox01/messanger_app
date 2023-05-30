@@ -12,6 +12,7 @@ function login(){
     if(checkSimplyField(username,errUsername) && checkSimplyField(psw,errPsw)){
 
         let formData = new FormData;
+        formData.append('token',token);
         formData.append('username',username.value);
         formData.append('psw',psw.value);
 
@@ -21,7 +22,18 @@ function login(){
             body:formData
         }).then(res=>res.json()).
         then(data=>{
-            console.log(data)
+            if(data.response == 0){
+                resetField();
+                msgErrFromServer.classList.remove('msg-off');
+                msgErrFromServer.innerHTML = data.message;
+                return 
+            }   
+            if(data.response == 1){
+                resetField();
+                msgErrFromServer.classList.add('msg-off');
+                msgErrFromServer.innerHTML = "..";
+                window.location.href = "./index.php";
+            }
         })
     }
 }

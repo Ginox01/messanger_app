@@ -39,8 +39,8 @@
                             echo json_encode($data);
                         }else{
                             $has_psw = password_hash($psw,PASSWORD_DEFAULT);
-                            $req = "INSERT INTO users(mail,username,image,psw)
-                            VALUES('$mail','$username','default','$has_psw')";
+                            $req = "INSERT INTO users(mail,username,image,psw,status)
+                            VALUES('$mail','$username','default','$has_psw','online')";
                             if($conn->query($req)){
                                 $_SESSION['logged'] = true;
                                 $_SESSION['username'] = $username;

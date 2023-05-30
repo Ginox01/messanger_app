@@ -5,7 +5,9 @@ TABLE users => [
     mail VARCHAR(50) NOT NULL,
     username VARCHAR(20) NOT NULL,
     image VARCHAR(400),
-    psw VARCHAR(255) NOT NULL
+    psw VARCHAR(255) NOT NULL,
+    status VARCHAR(20) NOT NULL
 ]
 
-DA RIFARE ANCHE A CASA users aggiungere image!!!!!!!
+
+AGGIUNGERE STATUS!!!!!! EVEN AT WORK!!
