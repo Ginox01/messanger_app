@@ -1,7 +1,11 @@
 <?php
+    session_start();
     if(!isset($_SESSION['logged'])){
         header("location: login_page.php");
     }
+
+    $username = $_SESSION['username'];
+    $image = $_SESSION['img']; 
 
 ?>
 
@@ -31,9 +35,9 @@
         
         <div class="s-wrap-info-user">
             <div class="s-wrap-img">
-                <img alt="img" src="./src/no-img.jpg">
+                <img alt="img" src="<?= $image == 'default' ? "./src/no-img.jpg":$image ?>">
             </div>
-            <div><h3>Nome Utente</h3></div>
+            <div><h3><?=$username?></h3></div>
             <div class="s-wrap-btns">
             
                 <button type="button" class="btn" id="btn-change-img">Change img</button>            
@@ -164,5 +168,6 @@
         <footer></footer>
     </section>
 
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

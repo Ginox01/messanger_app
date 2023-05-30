@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['crsf'])){
+        $bytes = random_bytes(32);
+        $token = bin2hex($bytes);
+        $_SESSION['crsf'] = $token;
+    }
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +19,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <input type="hidden" id="token" value="<?=$token?>">
 
     <section class="app">
         <header>
@@ -38,7 +49,7 @@
                 </div>
                 <input class="" type="password" placeholder="Insert your password.." id="psw"  />
             </div>
-            <button type="button" class="btn btn-login">LOGIN</button>
+            <button type="button" id='btn-login' class="btn btn-login">LOGIN</button>
         </form>
         <p style="text-align:center;margin-top:5px">New user?? <a href="registration_page.php">register</a> now!</p>
         <footer></footer>

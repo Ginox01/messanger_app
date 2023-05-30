@@ -1,3 +1,4 @@
+const token = document.getElementById('token').value;
 const msgErrorFromServer = document.getElementById('err-server');
 const msgErrorMail = document.getElementById('err-mail');
 const msgErrorUsername = document.getElementById('err-username');
@@ -8,6 +9,7 @@ const username = document.getElementById('username');
 const psw = document.getElementById('psw');
 const confirmPsw = document.getElementById('confirm-psw');
 const btnSignUp = document.getElementById('btn-new-user');
+
 
 
 
@@ -84,6 +86,7 @@ function createNewUser(){
     checkSimplyField(psw,msgErrorPsw) && checkConfirPsw(confirmPsw,psw,msgErrorConfirmPsw) ){
         
         let formData = new FormData;
+        formData.append('token',token);
         formData.append('mail',mail.value);
         formData.append('username',username.value);
         formData.append('psw',psw.value);
@@ -94,7 +97,18 @@ function createNewUser(){
             body:formData
         }).then(res=>res.json())
         .then(data =>{
-            console.log(data);
+            if(data.response == 0){
+                msgErrorFromServer.classList.remove('msg-off');
+                msgErrorFromServer.innerHTML = data.message;
+                resetField();
+                return;
+            };
+
+            if(data.response == 1){
+                msgErrorFromServer.classList.add('msg-off');
+                msgErrorFromServer.innerHTML = "..";
+                window.location.href = "./index.php";
+            }
         })
     }
 }

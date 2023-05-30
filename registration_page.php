@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $token = $_SESSION['crsf'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +17,7 @@
 <body>
 
     <section class="app">
+        <input type="hidden" value="<?=$token?>" id="token" >
         <header>
             <div class="wrap-logo">
                 <img src="./src/logo.png" alt="logo" />
@@ -27,7 +32,7 @@
             ..
          </div>
 
-         <form>
+         <form method="POST">
             <div class="s-wrap-field">
                 <div>
                     <div id="err-mail" class="s-wrap-msg-err msg-off"> ..</div>
