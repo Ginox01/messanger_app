@@ -27,6 +27,8 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <input type="hidden" id="username" value="<?=$username?>">
 
     <section class="app">
         <header>
@@ -40,7 +42,7 @@
         
         <div class="s-wrap-info-user">
             <div class="s-wrap-img">
-                <img alt="img" src="<?= $image == 'default' ? "./src/no-img.jpg":$image ?>">
+                <img alt="img" src="<?= $image == 'default' ? "./src/no-img.jpg":"./src/images/$image" ?>">
             </div>
             <div><h3><?=$username?></h3></div>
             <div class="s-wrap-btns">
@@ -51,7 +53,11 @@
             <span></span>
         </div>
         <div class="s-wrap-list-users">
-            
+            <section style="display: none;" class="s-wrap-no-users">
+                <div id="displayErrorFormServer" class="wrap-server-error">
+                    
+                </div>
+            </section>  
             <div class="s-utente">
                 <div class="s-utente-img">
                     <img src="./src/no-img.jpg">
@@ -176,7 +182,7 @@
             <div class="img-form-container">
             <span id="icon-close-form-img">x</span>
                 <div class="wrap-img-form-img">
-                    <img src="<?= $image == 'default' ? "./src/no-img.jpg":"./src/$image" ?>" >
+                    <img src="<?= $image == 'default' ? "./src/no-img.jpg":"./src/images/$image" ?>" >
                     <h3>Your actually photo</h3>
                 </div>
                 <form action="./php/change_img.php" method="POST" enctype="multipart/form-data">

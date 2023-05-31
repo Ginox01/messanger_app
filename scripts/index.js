@@ -1,6 +1,37 @@
 let closeBroswer = true;
-const imageForm = document.getElementById('app-form-area');
+const username = document.getElementById('username').value;
 
+displayUsers();
+setInterval(() => {
+    displayUsers();
+}, 20000);
+
+function displayUsers(){
+    fetch("./php/get_users.php",{
+        method:"POST",
+        header:{"Content-Type":"application/json"},
+    }).then(res=>res.json())
+    .then(data=>{
+        let wrapUsers = document.querySelector('s-wrap-list-users');
+        let wrapNoUser = document.querySelector('.s-wrap-no-users');
+        let wrapErrorFromServer = document.getElementById('displayErrorFormServer');
+        if(data.response == 1){
+            console.log(data);
+            wrapErrorFromServer.innerHTML = "";
+            wrapNoUser.style.display = "none";
+            return;
+        }
+        if(data.response == 0){
+            wrapNoUser.style.display = "flex";
+            wrapErrorFromServer.innerHTML = data.message;
+        }
+    })
+}
+
+
+
+
+const imageForm = document.getElementById('app-form-area');
 const btnOpenFormChangeImg = document.getElementById('btn-change-img');
 btnOpenFormChangeImg.addEventListener('click',()=>{
     closeBroswer =false;
@@ -39,10 +70,8 @@ btnCloseImgForm.addEventListener('click', closeFormImage);
 const btnLogout = document.getElementById('btn-logout');
 
 btnLogout.addEventListener('click',()=> window.location.href = "./php/logout.php");
-  window.addEventListener('beforeunload',()=>{
-      if(closeBroswer == true){
-          fetch('./php/logout.php').then(res=>res.json()).then(data=>{})      
-      }
- })
-
-console.log(closeBroswer)
+//   window.addEventListener('beforeunload',()=>{
+//       if(closeBroswer == true){
+//           fetch('./php/logout.php').then(res=>res.json()).then(data=>{})      
+//       }
+//  })

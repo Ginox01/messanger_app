@@ -7,6 +7,8 @@
     position: relative;
 }
 
+
+
 .s-wrap-info-user div:nth-child(1) {
     width: 20%;
     height: 100%;
@@ -92,6 +94,16 @@
     border-bottom: 2px white solid;
     position: relative;
     overflow-y: auto;
+}
+
+.s-wrap-no-users {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .s-wrap-list-users::-webkit-scrollbar {
