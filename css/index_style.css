@@ -187,15 +187,41 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+#app-form-area #icon-close-form-img{
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+    height: 30px;
+    width: 30px;
+    background-color: var(--header--color);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    padding-bottom: 5px;
+    transition: all 0.6s ease;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#app-form-area #icon-close-form-img:hover {
+    color: var(--header--color);
+    background-color: whitesmoke;
 }
 
 .img-form-container {
     height: 60%;
     width: 70%;
     background-color: whitesmoke;
+    position: relative;
 }
 
 .wrap-img-form-img {
@@ -206,6 +232,7 @@
     flex-direction: column;
 
 }
+
 
 .wrap-img-form-img img {
     margin-top: 10px;
@@ -224,7 +251,10 @@
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    height: 40px;
+   
 }
+
 
 input[type=file]{
     z-index: 1;
@@ -234,6 +264,7 @@ input[type=file]{
     color: whitesmoke;
     font-size: 1px;
     transform: translateX(-50%);
+    bottom: 0;
 }
 
 .wrap-upload label {
@@ -246,10 +277,32 @@ input[type=file]{
     padding: 5px;
     color: white;
     transform: translateX(-50%);
+    bottom: 0;
+    border-radius: 5px;
 }
 
-fare hover label
+.wrap-upload label:hover {
+    background-color: yellowgreen;
+}
 
+.wrap-btn-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.wrap-btn-img button {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    padding: 5px 50px;
+    border-radius: 5px;
+}
+
+.wrap-btn-img button:active {
+    transform: scale(0.98);
+}
 
 /*     ++++++++++++++++++++++++++ MEDIA QUERIES ++++++++++++++++++++++++++++++ */
 

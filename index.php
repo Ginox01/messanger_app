@@ -6,7 +6,12 @@
 
     $username = $_SESSION['username'];
     $image = $_SESSION['img']; 
-
+    $errorImg = false;
+    if(isset($_SESSION['err-img'])){
+        $errorImg = true;
+        $errImgMsg = $_SESSION['err-img-message'];
+    }
+    
 ?>
 
 <!DOCTYPE html>
@@ -167,18 +172,25 @@
         <!--START FROM IMAGINE AREA -->
 
         <section id="app-form-area">
+            
             <div class="img-form-container">
+            <span id="icon-close-form-img">x</span>
                 <div class="wrap-img-form-img">
                     <img src="<?= $image == 'default' ? "./src/no-img.jpg":"./src/$image" ?>" >
                     <h3>Your actually photo</h3>
                 </div>
-                <form action="./php/change_img.php" method="POST">
+                <form action="./php/change_img.php" method="POST" enctype="multipart/form-data">
                     <div class="wrap-upload">
                         <label for="file">SCEGLI IMMAGINE</label>
                         <input type="file" id="file" name="image" placeholder="Scegli immagine">
                     </div>
+                    <div class="wrap-server-error" style="display:<?=$errorImg == true ? "block":"none"?>" >
+                        <?= $errImgMsg ?>
+                    </div>
+                    <div class="wrap-btn-img">
+                    <button type="submit" id="btn-img" class="btn">CAMBIA</button>
+                    </div>
                     
-                    <button type="submit" class="btn">CAMBIA</button>
                 </form>
             </div>
         </section>

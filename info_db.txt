@@ -10,4 +10,3 @@ TABLE users => [
 ]
 
 
-AGGIUNGERE STATUS!!!!!! EVEN AT WORK!!
