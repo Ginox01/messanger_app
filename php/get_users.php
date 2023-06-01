@@ -10,8 +10,18 @@
                 ];
                 echo json_encode($data);
             }else{
+                $data = [];
+                $data['response'] = 1;
+                $data['users'] = [];
                 while($user = $state->fetch_array(MYSQLI_ASSOC)){
-                    //DAQUIIIIIIIIIIIIIIIIII
+                    $tmp = [];
+                    $tmp['id'] = $user['id'];
+                    $tmp['mail'] = $user['mail'];
+                    $tmp['username'] = $user['username'];
+                    $tmp['image'] = $user['image'];
+                    $tmp['status'] = $user['status'];
+                    array_push($data['users'],$tmp);
+
                 }
                 echo json_encode($data);
             }

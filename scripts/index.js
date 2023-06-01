@@ -1,6 +1,7 @@
 let closeBroswer = true;
 const username = document.getElementById('username').value;
 
+
 displayUsers();
 setInterval(() => {
     displayUsers();
@@ -12,13 +13,12 @@ function displayUsers(){
         header:{"Content-Type":"application/json"},
     }).then(res=>res.json())
     .then(data=>{
-        let wrapUsers = document.querySelector('s-wrap-list-users');
+       
         let wrapNoUser = document.querySelector('.s-wrap-no-users');
         let wrapErrorFromServer = document.getElementById('displayErrorFormServer');
+        
         if(data.response == 1){
-            console.log(data);
-            wrapErrorFromServer.innerHTML = "";
-            wrapNoUser.style.display = "none";
+            generateUsers(data.users);
             return;
         }
         if(data.response == 0){
@@ -26,6 +26,35 @@ function displayUsers(){
             wrapErrorFromServer.innerHTML = data.message;
         }
     })
+}
+
+
+// dislay the user call with previusly ajax function
+function generateUsers(users){
+    console.log(users)
+    let wrapUsers = document.querySelector('.s-wrap-list-users');
+    let rows ='';
+    users.forEach(user =>{
+        let row = `
+        
+            <div class="s-utente" style="display:${user.username == username ? 'none':'flex'}">
+                <div class="s-utente-img">
+                    <img src="${user.image == 'default' ? './src/no-img.jpg':'./src/images/'+user.image}">
+                </div>
+                <div class="s-utente-info">
+                    <h4 style="padding:0;margin:0">${user.username}</h4>
+                    <p class="s-small">last message</p>
+                </div>
+                <div class="s-utente-activity">
+                    <span class="activity ${user.status}"></span>
+                </div>
+                <span></span>
+            </div> 
+
+        `;
+        rows += row;
+    })
+    wrapUsers.innerHTML = rows;
 }
 
 

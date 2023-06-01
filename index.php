@@ -58,117 +58,8 @@
                     
                 </div>
             </section>  
-            <div class="s-utente">
-                <div class="s-utente-img">
-                    <img src="./src/no-img.jpg">
-                </div>
-                <div class="s-utente-info">
-                    <h4 style="padding:0;margin:0">Nome Utente</h4>
-                    <p class="s-small">last message</p>
-                </div>
-                <div class="s-utente-activity">
-                    <span class="activity offline"></span>
-                </div>
-                <span></span>
-            </div>
-
-            <div class="s-utente">
-                <div class="s-utente-img">
-                    <img src="./src/no-img.jpg">
-                </div>
-                <div class="s-utente-info">
-                    <h4 style="padding:0;margin:0">Nome Utente</h4>
-                    <p class="s-small">last message</p>
-                </div>
-                <div class="s-utente-activity">
-                    <span class="activity offline"></span>
-                </div>
-                <span></span>
-            </div>
-
-            <div class="s-utente">
-                <div class="s-utente-img">
-                    <img src="./src/no-img.jpg">
-                </div>
-                <div class="s-utente-info">
-                    <h4 style="padding:0;margin:0">Nome Utente</h4>
-                    <p class="s-small">last message</p>
-                </div>
-                <div class="s-utente-activity">
-                    <span class="activity offline"></span>
-                </div>
-                <span></span>
-            </div>
-
-            <div class="s-utente">
-                <div class="s-utente-img">
-                    <img src="./src/no-img.jpg">
-                </div>
-                <div class="s-utente-info">
-                    <h4 style="padding:0;margin:0">Nome Utente</h4>
-                    <p class="s-small">last message</p>
-                </div>
-                <div class="s-utente-activity">
-                    <span class="activity offline"></span>
-                </div>
-                <span></span>
-            </div>
-
-            <div class="s-utente">
-                <div class="s-utente-img">
-                    <img src="./src/no-img.jpg">
-                </div>
-                <div class="s-utente-info">
-                    <h4 style="padding:0;margin:0">Nome Utente</h4>
-                    <p class="s-small">last message</p>
-                </div>
-                <div class="s-utente-activity">
-                    <span class="activity offline"></span>
-                </div>
-                <span></span>
-            </div>
-
-            <div class="s-utente">
-                <div class="s-utente-img">
-                    <img src="./src/no-img.jpg">
-                </div>
-                <div class="s-utente-info">
-                    <h4 style="padding:0;margin:0">Nome Utente</h4>
-                    <p class="s-small">last message</p>
-                </div>
-                <div class="s-utente-activity">
-                    <span class="activity offline"></span>
-                </div>
-                <span></span>
-            </div>
-
-            <div class="s-utente">
-                <div class="s-utente-img">
-                    <img src="./src/no-img.jpg">
-                </div>
-                <div class="s-utente-info">
-                    <h4 style="padding:0;margin:0">Nome Utente</h4>
-                    <p class="s-small">last message</p>
-                </div>
-                <div class="s-utente-activity">
-                    <span class="activity offline"></span>
-                </div>
-                <span></span>
-            </div>
-
-            <div class="s-utente">
-                <div class="s-utente-img">
-                    <img src="./src/no-img.jpg">
-                </div>
-                <div class="s-utente-info">
-                    <h4 style="padding:0;margin:0">Nome Utente</h4>
-                    <p class="s-small">last message</p>
-                </div>
-                <div class="s-utente-activity">
-                    <span class="activity offline"></span>
-                </div>
-                <span></span>
-            </div>
+            
+            
 
 
             
@@ -202,7 +93,7 @@
         </section>
 
         <!-- END FORM IMAGE AREA -->
-
+        <a href="chat_page.php">chat area php</a>
         <footer></footer>
     </section>
 

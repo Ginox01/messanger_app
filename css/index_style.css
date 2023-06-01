@@ -149,7 +149,7 @@
     transition: all 0.6s ease;
 }
 
-.activity .online {
+.online {
     background-color: green;
 }
 
