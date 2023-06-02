@@ -52,6 +52,9 @@
             </div>
             <span></span>
         </div>
+        <div class="s-wrap-search-bar">
+            <input type="text" id="search" placeholder="Search user...">
+        </div>
         <div class="s-wrap-list-users">
             <section style="display: none;" class="s-wrap-no-users">
                 <div id="displayErrorFormServer" class="wrap-server-error">
@@ -93,7 +96,7 @@
         </section>
 
         <!-- END FORM IMAGE AREA -->
-        <a href="chat_page.php">chat area php</a>
+        
         <footer></footer>
     </section>
 

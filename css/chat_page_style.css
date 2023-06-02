@@ -6,6 +6,7 @@
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
+    position: relative;
     
     
 }
@@ -22,7 +23,8 @@ section.s-area-chat::-webkit-scrollbar {
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
-    background-color: rgb(238, 238, 238);;
+    background-color: rgb(238, 238, 238);
+    position: relative;
     
 }
 
@@ -104,8 +106,55 @@ input[type=text]{
 }
 
 #btn-mex{
-    background-color: white;
-    color: var(--header--color);
+    background-color: var(--header--color);
     padding: 4px;
+    border-radius: 0 20px 20px 0px;
+    color: white;
+    
 
+}
+
+.s-icon-return {
+    position: absolute;
+    color: var(--header--color);
+    font-size: 50px;
+    left: 25px;
+    cursor: pointer;
+
+}
+
+.s-wrap-img-guest{
+    position: absolute;
+    right: 20px;
+}
+
+.s-wrap-img-guest img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+#wrap-no-messages {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    background-color: whitesmoke;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap-no-messages div {
+    padding: 30px;
+    background-color: rgba(6, 185, 3, 0.7);
+    color: white;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 10px 2px lightgreen;
 }

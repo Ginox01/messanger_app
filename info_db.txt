@@ -9,4 +9,9 @@ TABLE users => [
     status VARCHAR(20) NOT NULL
 ]
 
-
+TABLE messages => [
+    id INT(9) PRIMARY KEY AUTO_INCREMENT,
+    message TEXT,
+    mittente VARCHAR(20) NOT NULL,
+    destinatario VARCHAR(20) NOT NULL
+]
