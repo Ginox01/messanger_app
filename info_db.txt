@@ -1,4 +1,4 @@
-NAME DATABASE = teresaah
+
 
 TABLE users => [
     id INT(9) PRIMARY KEY AUTO_INCREMENTE,
